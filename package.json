@@ -1,0 +1,23 @@
+{
+  "name": "web-dev",
+  "version": "1.0.0",
+  "description": "Full stack web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levanayang/node-web-dev.git"
+  },
+  "keywords": [
+    "nodejs",
+    "fullstack"
+  ],
+  "author": "Levana Yang <levanavyang@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/levanayang/node-web-dev/issues"
+  },
+  "homepage": "https://github.com/levanayang/node-web-dev#readme"
+}
