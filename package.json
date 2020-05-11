@@ -11,6 +11,7 @@
     "url": "git+https://github.com/levanayang/node-web-dev.git"
   },
   "keywords": [
+    "react",
     "nodejs",
     "fullstack"
   ],
@@ -19,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/levanayang/node-web-dev/issues"
   },
-  "homepage": "https://github.com/levanayang/node-web-dev#readme"
+  "homepage": "https://github.com/levanayang/node-web-dev#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "pg": "^8.1.0"
+  }
 }
