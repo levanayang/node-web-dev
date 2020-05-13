@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/levanayang/node-web-dev#readme",
   "devDependencies": {
+    "@types/express": "^4.17.6",
     "concurrently": "^5.2.0",
     "nodemon": "^2.0.3"
   },
