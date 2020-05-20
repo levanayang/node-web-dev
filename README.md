@@ -1,2 +1,2 @@
-# node-web-dev
-a node web app
+# My Website
+A simple webapp using React, Express, and PostgreSQL
