@@ -15,6 +15,15 @@ app.use(bodyParser.json());
 app.use('/api/cities', require('./api/cities'));
 app.use('/api/weather', require('./api/weather'));
 
+// path finding for production build
+if (ENV === 'production') {
+    // serve static files that are in the client/build folder
+    app.use(express.static(path.join(__dirname, '../client/build')));
+    app.use((req, res) => {
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
+    });
+}
+
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}...`);
 });
