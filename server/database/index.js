@@ -1,7 +1,7 @@
 let { Pool } = require('pg');
 
 const SSL = process.env.NODE_ENV === 'production';
-const CONNECTION_STRING = SSL ? process.env.DATABASE_URL : 'postgresql://postgres:postgres@localhost:5432/react-web-dev-db';
+const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:postgres@localhost:5432/react-web-dev-db';
 
 class Database {
     constructor () {

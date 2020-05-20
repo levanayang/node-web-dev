@@ -6,6 +6,9 @@ let db = require('./database/index.js');
 
 const ENV = process.env.NODE_ENV;
 const PORT = process.env.PORT || 5000;
+if (ENV === 'production') {
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+}
 
 const app = express();
 
