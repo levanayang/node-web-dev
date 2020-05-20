@@ -2,13 +2,16 @@
   "name": "web-dev",
   "version": "1.0.0",
   "description": "Full stack web app",
+  "engines": {
+    "node": "13.1.0";
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix client",
     "server": "nodemon server",
-    "start": "node server",
+    "start": "serve -s build",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
