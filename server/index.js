@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser');
 
-let db = require('./database');
+let db = require('./database/index.js');
 
 const ENV = process.env.NODE_ENV;
 const PORT = process.env.PORT || 5000;
