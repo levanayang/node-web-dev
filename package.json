@@ -2,9 +2,6 @@
   "name": "web-dev",
   "version": "1.0.0",
   "description": "Full stack web app",
-  "engines": {
-    "node": "13.1.0";
-  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
