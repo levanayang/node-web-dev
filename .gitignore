@@ -105,3 +105,6 @@ dist
 
 # Jetbrains IDE
 .idea/
+
+# Google API
+credentials.json
