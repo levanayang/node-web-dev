@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: block;
 }
 
 code {
@@ -28,4 +29,16 @@ code {
 
 .weather {
   margin-top: 30px;
+}
+
+.resume {
+  width: 100%;
+  text-align: center;
+}
+
+.resume iframe {
+  margin: 0 auto;
+  height: 1750px;
+  width: 800px;
+  border: none;
 }

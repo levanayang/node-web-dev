@@ -74,10 +74,10 @@ class App extends Component {
   render() {
     return (
         <Container fluid className="main">
-          <Navbar dark color="dark">
-            <NavbarBrand href="/">Home</NavbarBrand>
-          </Navbar>
-          <Row>
+            <Navbar dark color="dark">
+                <NavbarBrand href="/">Home</NavbarBrand>
+            </Navbar>
+            <Row>
             <Col>
               <Jumbotron>
                 <h1 className="display-3">Levana Yang</h1>
@@ -94,8 +94,8 @@ class App extends Component {
                 </InputGroup>
               </Jumbotron>
             </Col>
-          </Row>
-          <Row>
+            </Row>
+            <Row>
             <Col>
               <h1 className="display-5">Current Weather</h1>
               <FormGroup>
@@ -106,9 +106,9 @@ class App extends Component {
                 </Input>
               </FormGroup>
             </Col>
-          </Row>
-          <Resume />
-          <Weather data={this.state.weather}/>
+            </Row>
+            <Weather data={this.state.weather}/>
+            <Resume src={"https://docs.google.com/document/d/e/2PACX-1vRAatOYzlULG_9rKJ6R6Uj3ugYbT-2KVuNeqxfLNsCn40kns9roG22W63oLhGrX5Hrtd01IUQbrzJ0y/pub?embedded=true"}/>
         </Container>
     );
   }

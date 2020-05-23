@@ -1,25 +1,19 @@
 import React from "react";
-import { Row, Col, Table } from 'reactstrap';
+import {Row} from 'reactstrap';
 
 // a Simple Component for my resume
-const Resume = (props) => {
-    const { data } = props;
-
-    if (!data)
-        return <div></div>;
-    return (
-        <Row className="resume">
-            <Col sm="12" md={{ size: 4, offset: 4 }}>
-                <h2>Resume</h2>
-                <img src="" alt=""/>
-                <span></span>
-                <span></span>
-                <Table>
-                    <tbody></tbody>
-                </Table>
-            </Col>
-        </Row>
-    );
-};
+class Resume extends React.Component {
+    render() {
+        return (
+            <Row className="resume">
+                <iframe title={"Resume"}
+                        src={this.props.src}
+                        scrolling="no"
+                        align="center"
+                />
+            </Row>
+        );
+    }
+}
 
 export default Resume;
