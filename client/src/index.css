@@ -27,7 +27,7 @@ code {
   text-align: center;
 }
 
-.weather {
+.weatherTable {
   margin-top: 30px;
 }
 
@@ -37,7 +37,7 @@ code {
 }
 
 .resume iframe {
-  margin: 0 auto;
+  margin: -100px auto;
   height: 1750px;
   width: 800px;
   border: none;

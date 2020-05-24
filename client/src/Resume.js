@@ -10,6 +10,7 @@ class Resume extends React.Component {
                         src={this.props.src}
                         scrolling="no"
                         align="center"
+
                 />
             </Row>
         );

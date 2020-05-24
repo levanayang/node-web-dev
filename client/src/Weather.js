@@ -1,46 +1,94 @@
-import React from "react";
-import { Row, Col, Table } from 'reactstrap';
+import React from 'react'
+import WeatherTable from './WeatherTable';
+import {
+    Row,
+    Col,
+    InputGroup,
+    Input,
+    InputGroupAddon, Button, FormGroup
+} from 'reactstrap';
 
-// a Simple Component for my resume
-const Weather = (props) => {
-    const { data } = props;
 
-    if (!data)
-        return <div></div>;
-    return (
-        <Row className="weather">
-            <Col sm="12" md={{ size: 4, offset: 4 }}>
-                <h2>{data.name}</h2>
-                <img src={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} alt="Weather Icon"/>
-                <span>{data.weather[0].main}</span>&nbsp;
-                <span>{Math.floor(data.main.temp)}&deg;C</span>
-                <Table>
-                    <tbody>
-                        <tr>
-                            <td>Wind</td>
-                            <td>{Math.floor(data.wind.speed)} km/h</td>
-                        </tr>
-                        <tr>
-                            <td>Pressure</td>
-                            <td>{Math.floor(data.main.pressure)} hPa</td>
-                        </tr>
-                        <tr>
-                            <td>Humidity</td>
-                            <td>{Math.floor(data.main.humidity)} %</td>
-                        </tr>
-                        <tr>
-                            <td>Min Temp</td>
-                            <td>{Math.floor(data.main.temp_min)}&deg;C</td>
-                        </tr>
-                        <tr>
-                            <td>Max Temp</td>
-                            <td>{Math.floor(data.main.temp_max)}&deg;C</td>
-                        </tr>
-                    </tbody>
-                </Table>
-            </Col>
-        </Row>
-    );
-};
+class Weather extends React.Component {
+
+    state = {
+        weather: null,
+        cityList: [],
+        newCityName: ''
+    };
+
+    // lifecycle method
+    componentDidMount () {
+        this.getCityList();
+    }
+
+    getCityList = () => {
+        fetch('/api/cities')
+            .then(res => res.json())
+            .then(res => {
+                let cityList = res.map(r => r.city_name);
+                this.setState({ cityList });
+            })
+    };
+
+    handleInputChange = (e) => {
+        this.setState({ newCityName: e.target.value });
+    };
+
+    handleAddCity = () => {
+        fetch('/api/cities', {
+            method: 'post',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ city: this.state.newCityName })
+        })
+            .then(res => res.json())
+            .then(res => {
+                this.getCityList();
+                this.setState({ newCityName: '' });
+            })
+    };
+
+    getWeather = (city) => {
+        fetch(`/api/weather/${city}`)
+            .then(res => res.json())
+            .then(weather => {
+                console.log(weather);
+                this.setState({ weather });
+            })
+    };
+
+    handleChangeCity = (e) => {
+        this.getWeather(e.target.value);
+    };
+
+    render() {
+        return (
+            <div>
+                <InputGroup>
+                    <Input placeholder = "New city name..."
+                           value = { this.state.newCityName }
+                           onChange={ this.handleInputChange }>
+                    </Input>
+                    <InputGroupAddon addonType="append">
+                        <Button color="primary" onClick={this.handleAddCity}>Add City</Button>
+                    </InputGroupAddon>
+                </InputGroup>
+                <Row>
+                    <Col>
+                        <h1 className="display-5">Current Weather</h1>
+                        <FormGroup>
+                            <Input type="select" onChange={this.handleChangeCity}>
+                                { this.state.cityList.length === 0 && <option>No cities added yet.</option> }
+                                { this.state.cityList.length > 0 && <option>Select a city.</option> }
+                                { this.state.cityList.map((city, i) => <option key={i}>{city}</option>) }
+                            </Input>
+                        </FormGroup>
+                    </Col>
+                </Row>
+                <WeatherTable data={this.state.weather}/>
+            </div>
+        )
+    }
+}
 
 export default Weather;
