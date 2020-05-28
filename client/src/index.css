@@ -25,6 +25,7 @@ code {
 
 .main {
   text-align: center;
+  margin-top: 75px;
 }
 
 .weatherTable {
@@ -41,4 +42,5 @@ code {
   height: 1750px;
   width: 800px;
   border: none;
+  z-index: -1;
 }
