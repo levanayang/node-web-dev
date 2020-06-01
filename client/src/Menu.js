@@ -5,9 +5,11 @@ import {
     NavbarToggler,
     NavbarBrand,
     Nav,
-    NavItem,
-    NavLink
+    NavItem
 } from 'reactstrap';
+import { Link, NavLink } from 'react-router-dom';
+
+import App from './App'
 
 class Menu extends React.Component{
     constructor(props) {
@@ -33,18 +35,18 @@ class Menu extends React.Component{
                         expand="md"
                         fixed="top"
                 >
-                    <NavbarBrand href="/">Home</NavbarBrand>
+                    <NavbarBrand tag={App} to="/">Home</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink href="/about">About Me</NavLink>
+                                <NavLink to="/about">About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/projects">Projects</NavLink>
+                                <NavLink to="/projects">Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="/links">Links</NavLink>
+                                <NavLink to="/links">Links</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
