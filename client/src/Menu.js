@@ -7,7 +7,7 @@ import {
     Nav,
     NavItem
 } from 'reactstrap';
-import { Link, NavLink } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 
 import App from './App'
 
@@ -35,7 +35,7 @@ class Menu extends React.Component{
                         expand="md"
                         fixed="top"
                 >
-                    <NavbarBrand tag={App} to="/">Home</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/">Home</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
