@@ -9,8 +9,6 @@ import {
 } from 'reactstrap';
 import {Link, NavLink} from 'react-router-dom';
 
-import App from './App'
-
 class Menu extends React.Component{
     constructor(props) {
         super(props);

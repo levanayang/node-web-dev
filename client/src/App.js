@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import './App.css';
 
-import Menu from './Menu'
-import Routes from './Routes'
+import Menu from './UniversalComponents/Menu'
+import Routes from './UniversalComponents/Routes'
 
 class App extends Component {
   constructor(props) {
@@ -20,6 +19,7 @@ class App extends Component {
         <div>
           <Menu />
           <Routes/>
+        {/*  TODO: add button that takes you to the top of the page*/}
         </div>
     );
   }

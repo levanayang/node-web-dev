@@ -1,8 +1,9 @@
 // a page for to learn more about me (blog) and how to contact me
 
 import React, { Component } from 'react'
-// import Menu from "./Menu";
 import {Container, Jumbotron} from "reactstrap";
+
+import ContactForm from "./ContactForm";
 
 class About extends Component {
     render() {
@@ -12,6 +13,7 @@ class About extends Component {
                 <Jumbotron>
                     <h1 className="display-3">About Me</h1>
                 </Jumbotron>
+                <ContactForm/>
             </Container>
         );
     }

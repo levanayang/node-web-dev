@@ -2,10 +2,10 @@ import React from 'react';
 import { Switch, Route } from 'react-router'
 
 // webapp page components
-import Home from './Home';
-import About from './About'
-import Projects from './Projects'
-import Links from './Links'
+import Home from '../Homepage/Home';
+import About from '../About/About'
+import Projects from '../CSProjects/Projects'
+import Links from '../Links/Links'
 
 const Routes = () => {
     return (
