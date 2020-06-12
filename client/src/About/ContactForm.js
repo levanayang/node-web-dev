@@ -79,6 +79,7 @@ class ContactForm extends React.Component{
                                   placeholder="Please type here..."
                         />
                     </div>
+                    {/*TODO: Add CAPTCHA test*/}
                     <button type="submit" className="btn-submit-message">Submit</button>
                 </form>
             </div>

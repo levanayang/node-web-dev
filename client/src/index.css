@@ -44,3 +44,25 @@ code {
   border: none;
   z-index: -1;
 }
+
+.inactive-menu {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.inactive-menu:hover {
+  text-decoration: underline;
+  color: lightgoldenrodyellow;
+}
+
+.active-menu {
+  color: greenyellow;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.active-menu:hover {
+  text-decoration: none;
+  color: greenyellow;
+}

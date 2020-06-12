@@ -39,10 +39,11 @@ class EmailHandler {
     sendContactFormEmail(name, email, content) {
         let mail = {
             from: name,
+            address: email,
             to: REC_EMAIL,
             subject: 'New message from ' + email,
             generateTextFromHTML: true,
-            html: "<b>test</b>"
+            html: "<p>" + content +"</p>"
         }
 
         this.#transporter.verify((error, success) => {
@@ -76,6 +77,8 @@ class EmailHandler {
         })
     }
     sendSecureMail(mail) {
+        // TODO: enable delivery status notification for undelivered/delayed messages
+        // https://nodemailer.com/smtp/dsn/
         this.#transporter.sendMail(mail, (error, response) => {
             error ? console.log(error) : console.log(response);
             this.#transporter.close();

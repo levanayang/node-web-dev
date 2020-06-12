@@ -33,18 +33,33 @@ class Menu extends React.Component{
                         expand="md"
                         fixed="top"
                 >
-                    <NavbarBrand tag={Link} to="/">Home</NavbarBrand>
+                    <NavbarBrand tag={Link} to="/">Levana Yang</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                                <NavLink to="/about">About Me</NavLink>
+                            <NavLink to="/"
+                                     className="inactive-menu"
+                                     activeClassName="active-menu"
+                                     exact={true}>Home</NavLink>
+                        </NavItem>
+                            <NavItem>
+                                <NavLink to="/about"
+                                         className="inactive-menu"
+                                         activeClassName="active-menu"
+                                         exact={true}>About Me</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/projects">Projects</NavLink>
+                                <NavLink to="/projects"
+                                         className="inactive-menu"
+                                         activeClassName="active-menu"
+                                         exact={true}>Projects</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/links">Links</NavLink>
+                                <NavLink to="/links"
+                                         className="inactive-menu"
+                                         activeClassName="active-menu"
+                                         exact={true}>Links</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>
