@@ -2,7 +2,13 @@
 
 import React, { Component } from 'react'
 // import Menu from "./Menu";
-import {Container, Jumbotron} from "reactstrap";
+import {Container,
+    Jumbotron,
+    Row,
+    Col,
+    ListGroup,
+    ListGroupItem
+} from "reactstrap";
 
 class Links extends Component {
     render() {
@@ -12,6 +18,29 @@ class Links extends Component {
                 <Jumbotron>
                     <h1 className="display-3">Links</h1>
                 </Jumbotron>
+                <Row>
+                    <Col sm="12" md={{ size: 6, offset: 3 }}>
+                        <h3>Social Media</h3>
+                        <ListGroup>
+                            <ListGroupItem className="list-social-media"
+                                           tag="a"
+                                           href="https://www.linkedin.com/in/levanavyang/">Linked In
+                            </ListGroupItem>
+                            <ListGroupItem className="list-social-media"
+                                           tag="a"
+                                           href="https://www.facebook.com/levana.yang.5">Facebook
+                            </ListGroupItem>
+                            <ListGroupItem className="list-social-media"
+                                           tag="a"
+                                           href="https://www.instagram.com/climili/">Instagram
+                            </ListGroupItem>
+                            <ListGroupItem className="list-social-media"
+                                           tag="a"
+                                           href="https://github.com/levanayang">GitHub
+                            </ListGroupItem>
+                        </ListGroup>
+                    </Col>
+                </Row>
             </Container>
         );
     }

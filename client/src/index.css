@@ -28,6 +28,8 @@ code {
   margin-top: 75px;
 }
 
+
+
 .weatherTable {
   margin-top: 30px;
 }
@@ -64,5 +66,17 @@ code {
 
 .active-menu:hover {
   text-decoration: none;
-  color: greenyellow;
+  color: lightgreen;
+}
+
+.list-social-media {
+  background: #d1eaa3;
+  font-weight: bolder;
+  color: darkolivegreen;
+}
+
+.list-social-media:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  color: honeydew;
 }
