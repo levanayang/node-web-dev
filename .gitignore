@@ -108,3 +108,6 @@ dist
 
 # Google API
 credentials.json
+
+# yarn.lock
+yarn.lock
