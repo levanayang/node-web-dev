@@ -38,9 +38,9 @@ class ContactForm extends React.Component{
     handleSubmit(event) {
         event.preventDefault();
 
-        let formSendUrl = (process.env.NODE_ENV === 'production'?
+        let formSendUrl = (process.env.NODE_ENV === 'production')?
             "https://my-website-lvy-2020.herokuapp.com/send"
-            : "http://localhost:5000/send");
+            : "http://localhost:5000/send";
 
         axios({
             method: 'POST',
