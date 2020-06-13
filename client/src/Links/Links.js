@@ -16,11 +16,12 @@ class Links extends Component {
             <Container fluid className="main">
                 {/*<Menu/>*/}
                 <Jumbotron>
-                    <h1 className="display-3">Links</h1>
+                    <h1 className="display-4">Links</h1>
                 </Jumbotron>
                 <Row>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
                         <h3>Social Media</h3>
+                        {/*TODO: Add icons for each link*/}
                         <ListGroup>
                             <ListGroupItem className="list-social-media"
                                            tag="a"
@@ -33,10 +34,6 @@ class Links extends Component {
                             <ListGroupItem className="list-social-media"
                                            tag="a"
                                            href="https://www.instagram.com/climili/">Instagram
-                            </ListGroupItem>
-                            <ListGroupItem className="list-social-media"
-                                           tag="a"
-                                           href="https://github.com/levanayang">GitHub
                             </ListGroupItem>
                         </ListGroup>
                     </Col>

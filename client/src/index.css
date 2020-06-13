@@ -1,11 +1,12 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Georgia, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
+  background: ghostwhite;
 }
 
 code {
@@ -26,6 +27,13 @@ code {
 .main {
   text-align: center;
   margin-top: 75px;
+}
+
+.main-jumbotron {
+  background-size: cover;
+  background-image: url("img/me_with_cup_side.jpg");
+  background-position-y: center;
+  color: white;
 }
 
 
@@ -78,5 +86,19 @@ code {
 .list-social-media:hover {
   text-decoration: none;
   font-weight: bolder;
-  color: honeydew;
+  background: honeydew;
+  color: olive;
+}
+
+.list-cs-projects {
+  background: lavender;
+  font-weight: bolder;
+  color: rebeccapurple;
+}
+
+.list-cs-projects:hover {
+  background: #f6def6;
+  text-decoration: none;
+  font-weight: bolder;
+  color: purple;
 }

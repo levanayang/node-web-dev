@@ -11,7 +11,7 @@ class About extends Component {
             <Container fluid className="main">
                 {/*<Menu/>*/}
                 <Jumbotron>
-                    <h1 className="display-3">About Me</h1>
+                    <h1 className="display-4">About Me</h1>
                 </Jumbotron>
                 <Row>
                     <Col></Col>

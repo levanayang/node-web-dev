@@ -78,6 +78,7 @@ class ContactForm extends React.Component{
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
+                        {/*TODO: Make contact form text keep its formatting*/}
                         <textarea className="form-control" id="contact-message" rows="10"
                                   value={this.state.message} onChange={this.onMessageChange}
                                   placeholder="Please type here..."
@@ -85,6 +86,7 @@ class ContactForm extends React.Component{
                     </div>
                     {/*TODO: Add CAPTCHA test*/}
                     <button type="submit" className="btn-submit-message">Submit</button>
+                {/*    TODO: Add successful send screen*/}
                 </form>
             </div>
         )
