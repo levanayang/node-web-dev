@@ -1,6 +1,7 @@
 // a form to contact me via email
-import React from 'react'
-import axios from 'axios'
+import React from 'react';
+import axios from 'axios';
+import { Alert } from 'reactstrap';
 
 class ContactForm extends React.Component{
     constructor(props) {
@@ -13,10 +14,18 @@ class ContactForm extends React.Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    state = {
+        name: '',
+        email: '',
+        message: '',
+        showAlert: false
+    }
+
     initFormState = {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        showAlert: false
     }
 
     onNameChange(event) {
@@ -32,7 +41,12 @@ class ContactForm extends React.Component{
     }
 
     resetForm() {
-        this.setState(this.initFormState)
+        this.setState({
+            name: '',
+            email: '',
+            message: '',
+            showAlert: false
+        })
     }
 
     handleSubmit(event) {
@@ -47,12 +61,26 @@ class ContactForm extends React.Component{
             url: formSendUrl,
             data: this.state
         }).then((response) => {
+            console.log("Axios has sent POST request. Response:");
+            console.log(response);
             if (response.data.status === 'success') {
                 alert("Message sent.");
-                this.resetForm()
-            } else if (response.data.status === 'fail') {
-                alert ("Message failed to send.")
+                this.resetForm();
+            } else if (response.data.status === 'fail'){
+                alert ("Message failed to send.");
             }
+        }).catch((err) => {
+            if (err.response) {
+                console.log("There was an error when submitting the form - Axios");
+                console.log(err.response.data);
+                console.log(err.response.status);
+                console.log(err.response.headers);
+            } else if (err.request) {
+                console.log(err.request);
+            } else {
+                console.log('Error when submitting the form - axios: ', err.message);
+            }
+            console.log(err.config);
         })
     }
 
@@ -87,6 +115,9 @@ class ContactForm extends React.Component{
                     {/*TODO: Add CAPTCHA test*/}
                     <button type="submit" className="btn-submit-message">Submit</button>
                 {/*    TODO: Add successful send screen*/}
+                    <Alert isOpen={false}> Email sent successfully
+
+                    </Alert>
                 </form>
             </div>
         )
