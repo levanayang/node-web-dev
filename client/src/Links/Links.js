@@ -19,14 +19,24 @@ class Links extends Component {
                     <h1 className="display-4">Links</h1>
                 </Jumbotron>
                 <Row>
-                    <Col sm="12" md={{ size: 6, offset: 3 }}>
-                        <h3>Social Media</h3>
+                    <Col  xs="6">
+                        <h3>Professional</h3>
                         {/*TODO: Add icons for each link*/}
                         <ListGroup>
-                            <ListGroupItem className="list-social-media"
+                            <ListGroupItem className="list-professional-links"
                                            tag="a"
                                            href="https://www.linkedin.com/in/levanavyang/">Linked In
                             </ListGroupItem>
+                            <ListGroupItem className="list-professional-links"
+                                           tag="a"
+                                           href="https://github.com/levanayang">GitHub
+                            </ListGroupItem>
+                        </ListGroup>
+                    </Col>
+                    <Col xs="6">
+                        <h3>Social Media</h3>
+                        {/*TODO: make button to hide and collapse these links*/}
+                        <ListGroup>
                             <ListGroupItem className="list-social-media"
                                            tag="a"
                                            href="https://www.facebook.com/levana.yang.5">Facebook

@@ -103,6 +103,20 @@ code {
   color: slategrey;
 }
 
+.list-professional-links {
+  background: #d1eaa3;
+  font-weight: bolder;
+  color: darkolivegreen;
+}
+
+.list-professional-links:hover {
+  text-decoration: none;
+  font-weight: bolder;
+  background: honeydew;
+  color: olive;
+}
+
+
 .list-social-media {
   background: #d1eaa3;
   font-weight: bolder;

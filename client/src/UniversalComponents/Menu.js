@@ -42,18 +42,18 @@ class Menu extends React.Component{
                                      className="inactive-menu"
                                      activeClassName="active-menu"
                                      exact={true}>Home</NavLink>
-                        </NavItem>
-                            <NavItem>
-                                <NavLink to="/about"
-                                         className="inactive-menu"
-                                         activeClassName="active-menu"
-                                         exact={true}>About Me</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to="/projects"
                                          className="inactive-menu"
                                          activeClassName="active-menu"
                                          exact={true}>Projects</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink to="/about"
+                                         className="inactive-menu"
+                                         activeClassName="active-menu"
+                                         exact={true}>About Me</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to="/links"
