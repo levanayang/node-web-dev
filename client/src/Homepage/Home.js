@@ -1,7 +1,7 @@
 // home page
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import {Container, Jumbotron} from "reactstrap";
-import Resume from './Resume'
+import Resume from './Resume';
 
 class Home extends Component {
     render() {

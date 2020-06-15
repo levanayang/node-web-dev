@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 import {Link, NavLink} from 'react-router-dom';
 
-class Menu extends React.Component{
+class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.toggle = this.toggle.bind(this);
@@ -38,10 +38,10 @@ class Menu extends React.Component{
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
-                            <NavLink to="/"
-                                     className="inactive-menu"
-                                     activeClassName="active-menu"
-                                     exact={true}>Home</NavLink>
+                                <NavLink to="/"
+                                         className="inactive-menu"
+                                         activeClassName="active-menu"
+                                         exact={true}>Home</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink to="/projects"
