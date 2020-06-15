@@ -103,10 +103,15 @@ code {
   color: slategrey;
 }
 
+.links-icon {
+  margin-right: 20px;
+}
+
 .list-professional-links {
   background: #d1eaa3;
   font-weight: bolder;
   color: darkolivegreen;
+  padding-bottom: 20px;
 }
 
 .list-professional-links:hover {
@@ -121,6 +126,7 @@ code {
   background: #d1eaa3;
   font-weight: bolder;
   color: darkolivegreen;
+  padding-bottom: 20px;
 }
 
 .list-social-media:hover {

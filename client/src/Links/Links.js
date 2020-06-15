@@ -9,6 +9,8 @@ import {Container,
     ListGroup,
     ListGroupItem
 } from "reactstrap";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faFacebook, faGithubAlt, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 class Links extends Component {
     render() {
@@ -21,15 +23,22 @@ class Links extends Component {
                 <Row>
                     <Col  xs="6">
                         <h3>Professional</h3>
-                        {/*TODO: Add icons for each link*/}
                         <ListGroup>
                             <ListGroupItem className="list-professional-links"
                                            tag="a"
-                                           href="https://www.linkedin.com/in/levanavyang/">Linked In
+                                           href="https://www.linkedin.com/in/levanavyang/">
+                                <FontAwesomeIcon className="links-icon"
+                                                 icon={faLinkedin}
+                                                 size="2x" />
+                                Linked In
                             </ListGroupItem>
                             <ListGroupItem className="list-professional-links"
                                            tag="a"
-                                           href="https://github.com/levanayang">GitHub
+                                           href="https://github.com/levanayang">
+                                <FontAwesomeIcon className="links-icon"
+                                                 icon={faGithubAlt}
+                                                 size="2x" />
+                                GitHub
                             </ListGroupItem>
                         </ListGroup>
                     </Col>
@@ -39,11 +48,19 @@ class Links extends Component {
                         <ListGroup>
                             <ListGroupItem className="list-social-media"
                                            tag="a"
-                                           href="https://www.facebook.com/levana.yang.5">Facebook
+                                           href="https://www.facebook.com/levana.yang.5">
+                                <FontAwesomeIcon className="links-icon"
+                                                 icon={faFacebook}
+                                                 size="2x" />
+                                Facebook
                             </ListGroupItem>
                             <ListGroupItem className="list-social-media"
                                            tag="a"
-                                           href="https://www.instagram.com/climili/">Instagram
+                                           href="https://www.instagram.com/climili/">
+                                <FontAwesomeIcon className="links-icon"
+                                                 icon={faInstagram}
+                                                 size="2x" />
+                                Instagram
                             </ListGroupItem>
                         </ListGroup>
                     </Col>
