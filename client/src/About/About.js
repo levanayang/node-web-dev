@@ -15,7 +15,7 @@ class About extends Component {
                 </Jumbotron>
                 <Row>
                     <Col></Col>
-                    <Col xs="6" sm="4"><ContactForm/></Col>
+                    <Col sm="4" lg="4"><ContactForm/></Col>
                 </Row>
             </Container>
         );

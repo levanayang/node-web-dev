@@ -40,13 +40,21 @@ class ContactForm extends React.Component{
         this.setState({message: event.target.value})
     }
 
-    resetForm() {
+    resetFormAfterSuccess() {
         this.setState({
             name: '',
             email: '',
             message: '',
-            showAlert: false
         })
+        this.onShowAlert();
+    }
+
+    onShowAlert = () => {
+        this.setState({showAlert: true}, () => {
+            window.setTimeout(() => {
+                this.setState({showAlert: false})
+            }, 2000)
+        });
     }
 
     handleSubmit(event) {
@@ -64,8 +72,8 @@ class ContactForm extends React.Component{
             console.log("Axios has sent POST request. Response:");
             console.log(response);
             if (response.data.status === 'success') {
-                alert("Message sent.");
-                this.resetForm();
+                // alert("Message sent.");
+                this.resetFormAfterSuccess();
             } else if (response.data.status === 'fail'){
                 alert ("Message failed to send.");
             }
@@ -113,11 +121,8 @@ class ContactForm extends React.Component{
                         />
                     </div>
                     {/*TODO: Add CAPTCHA test*/}
+                    <Alert isOpen={this.state.showAlert}> Email sent successfully</Alert>
                     <button type="submit" className="btn-submit-message">Submit</button>
-                {/*    TODO: Add successful send screen*/}
-                    <Alert isOpen={false}> Email sent successfully
-
-                    </Alert>
                 </form>
             </div>
         )
