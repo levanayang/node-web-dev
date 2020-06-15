@@ -15,7 +15,7 @@ class Links extends Component {
         return (
             <Container fluid className="main">
                 {/*<Menu/>*/}
-                <Jumbotron>
+                <Jumbotron className="links-jumbotron">
                     <h1 className="display-4">Links</h1>
                 </Jumbotron>
                 <Row>

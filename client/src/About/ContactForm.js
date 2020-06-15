@@ -90,21 +90,21 @@ class ContactForm extends React.Component{
                 <h2>Contact Me</h2>
                 <form onSubmit={this.handleSubmit}
                           method="POST">
-                    <div className="form-group">
+                    <div className="contact-form-group">
                         <label htmlFor="name">Name</label>
                         <input type="text" className="form-control"
                                value={this.state.name} onChange={this.onNameChange}
                                placeholder="John Smith"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="contact-form-group">
                         <label htmlFor="emailAddress">Email Address</label>
                         <input type="email" className="form-control" aria-describedby="emailHelp"
                                value={this.state.email} onChange={this.onEmailChange}
                                placeholder="you@email.ca"
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="contact-form-group">
                         <label htmlFor="message">Message</label>
                         {/*TODO: Make contact form text keep its formatting*/}
                         <textarea className="form-control" id="contact-message" rows="10"
