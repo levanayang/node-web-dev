@@ -11,7 +11,6 @@ class Home extends Component {
                     <h1 className="display-4">Levana's Portfolio</h1>
                     <p className="lead">Welcome to my site!</p>
                 </Jumbotron>
-                {/*TODO: allow pdf download of resume*/}
                 <Resume src={"https://docs.google.com/document/d/e/2PACX-1vRAatOYzlULG_9rKJ6R6Uj3ugYbT-2KVuNeqxfLNsCn40kns9roG22W63oLhGrX5Hrtd01IUQbrzJ0y/pub?embedded=true"}/>
             </Container>
         );

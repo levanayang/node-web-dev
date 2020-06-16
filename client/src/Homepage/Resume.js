@@ -1,5 +1,7 @@
 import React from "react";
-import {Row, Col, Button, Container, Collapse} from 'reactstrap';
+import {Col, Button, Container, Collapse} from 'reactstrap';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGoogleDrive} from "@fortawesome/free-brands-svg-icons";
 
 // a Simple Component for my resume
 class Resume extends React.Component {
@@ -19,8 +21,8 @@ class Resume extends React.Component {
 
     render() {
         return (
-            <Container>
-                <Col className="show-resume">
+            <Container fluid={true} className="resume-container">
+                <Col xs="auto" className="show-resume">
                     <Button
                             color="dark"
                             onClick={this.toggle}
@@ -29,13 +31,26 @@ class Resume extends React.Component {
                     </Button>
                 </Col>
                 <Collapse isOpen={this.state.visible}>
-                    <Col className="resume">
+                    <Col xs="auto" className="resume">
                         <iframe title={"Resume"}
                                 src={this.props.src}
                                 scrolling="no"
-                                align="center"/>
+                                align="center"
+                        />
                     </Col>
                 </Collapse>
+                <a href={`https://drive.google.com/file/d/1sM2RR4cUv0nIbnZDIojeiUamu-uMyr0y/view?usp=sharing`}
+                   download="levana_yang_resume.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                >
+                    <Button>
+                        <FontAwesomeIcon className="resume-download-icon"
+                                         icon={faGoogleDrive}
+                                         size="2x" />
+                        <h6>Download</h6>
+                    </Button>
+                </a>
             </Container>
         );
     }
