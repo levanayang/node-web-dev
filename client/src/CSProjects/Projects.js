@@ -29,6 +29,10 @@ class Projects extends Component {
                                            tag="a"
                                            href="https://github.com/jessicachakmlee/dbproject">Car Rental GitHub
                             </ListGroupItem>
+                            <ListGroupItem className="list-cs-projects"
+                                           tag="a"
+                                           href="https://github.com/levanayang/node-web-dev">My Portfolio Site
+                            </ListGroupItem>
                         </ListGroup>
                     </Col>
                 </Row>
