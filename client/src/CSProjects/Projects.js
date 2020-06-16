@@ -9,7 +9,7 @@ class Projects extends Component {
         return (
             <Container fluid className="main">
                 {/*<Menu/>*/}
-                <Jumbotron className="projects-jumbotron">
+                <Jumbotron fluid className="projects-jumbotron">
                     <h1 className="display-4">Projects</h1>
                 </Jumbotron>
                 <Row>

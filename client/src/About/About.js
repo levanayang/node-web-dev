@@ -1,5 +1,4 @@
 // a page for to learn more about me (blog) and how to contact me
-
 import React, { Component } from 'react'
 import {Container, Jumbotron, Col, Row} from "reactstrap";
 
@@ -10,7 +9,7 @@ class About extends Component {
         return (
             <Container fluid className="main">
                 {/*<Menu/>*/}
-                <Jumbotron className="about-jumbotron">
+                <Jumbotron fluid className="about-jumbotron">
                     <h1 className="display-4">About Me</h1>
                 </Jumbotron>
                 <Row>

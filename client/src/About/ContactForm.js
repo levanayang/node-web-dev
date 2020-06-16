@@ -109,7 +109,7 @@ class ContactForm extends React.Component{
                         <label htmlFor="emailAddress">Email Address</label>
                         <input type="email" className="form-control" aria-describedby="emailHelp"
                                value={this.state.email} onChange={this.onEmailChange}
-                               placeholder="you@email.ca"
+                               placeholder="example@email.ca"
                         />
                     </div>
                     <div className="contact-form-group">

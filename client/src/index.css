@@ -6,12 +6,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
-  background: ghostwhite;
+  background: rgb(52,58,64);
+  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(248,248,255,1) 36%);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a:hover {
+  color: ghostwhite;
+  text-decoration: none;
 }
 
 .input-group {
@@ -59,6 +65,7 @@ code {
 .resume-container {
   width: 100%;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .resume {
@@ -73,12 +80,12 @@ code {
 }
 
 .resume iframe {
-  margin-top: -100px;
   height: 1700px;
   width: 800px;
   border: none;
   z-index: -1000;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .inactive-menu {
@@ -168,14 +175,59 @@ code {
   height: 60px;
   width: 100%;
 }
+
 .footer-menu {
   color: darkgrey;
 }
-.footer-menu:hover {
-  color: ghostwhite;
-  text-decoration: none;
-}
+
 .footer-icon {
   color: black;
   margin-left: 15px;
+}
+
+.project-previews {
+  margin-top: 40px;
+}
+
+.project-preview-header {
+  color: ghostwhite;
+  background: #333;
+}
+
+.project-preview-link {
+  color: ghostwhite;
+}
+
+.project-preview-link:hover {
+  color: ghostwhite;
+  text-decoration: none;
+}
+
+.project-preview-footer {
+  background: #333;
+}
+
+.project-preview-projects-link {
+  color: #333333;
+}
+
+.project-preview-projects-link:hover {
+  color: #e8ecef;
+  text-decoration: none;
+}
+
+.project-preview-projects-link h1 {
+  background: #e8ecef;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.project-preview-projects-link h1:hover {
+  background: #6c747d;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.project-preview-header-link {
+  color: ghostwhite;
 }
