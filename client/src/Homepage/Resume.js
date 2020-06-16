@@ -1,5 +1,5 @@
 import React from "react";
-import {Row, Button, Container, Collapse} from 'reactstrap';
+import {Row, Col, Button, Container, Collapse} from 'reactstrap';
 
 // a Simple Component for my resume
 class Resume extends React.Component {
@@ -20,19 +20,21 @@ class Resume extends React.Component {
     render() {
         return (
             <Container>
-                <Button className="show-resume"
-                        color="dark"
-                        onClick={this.toggle}
-                        style={{ marginBottom: '1rem' }}>
-                    <h2>My Resume</h2>
-                </Button>
+                <Col className="show-resume">
+                    <Button
+                            color="dark"
+                            onClick={this.toggle}
+                            style={{ marginBottom: '1rem' }}>
+                        <h2>My Resume</h2>
+                    </Button>
+                </Col>
                 <Collapse isOpen={this.state.visible}>
-                    <Row className="resume">
+                    <Col className="resume">
                         <iframe title={"Resume"}
                                 src={this.props.src}
                                 scrolling="no"
                                 align="center"/>
-                    </Row>
+                    </Col>
                 </Collapse>
             </Container>
         );

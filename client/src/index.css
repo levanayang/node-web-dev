@@ -55,9 +55,16 @@ code {
 .weatherTable {
   margin-top: 30px;
 }
+
 .resume {
   width: 100%;
   text-align: center;
+  z-index: 1;
+}
+
+.show-resume {
+  position: center;
+  z-index: 2;
 }
 
 .resume iframe {
@@ -65,7 +72,7 @@ code {
   height: 1700px;
   width: 800px;
   border: none;
-  z-index: -1;
+  z-index: -1000;
 }
 
 .inactive-menu {
