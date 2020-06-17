@@ -6,8 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
-  background: rgb(52,58,64);
-  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(248,248,255,1) 36%);
+  background: ghostwhite;
+  /*background: rgb(52,58,64);*/
+  /*background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(248,248,255,1) 36%);*/
 }
 
 code {
@@ -86,6 +87,7 @@ a:hover {
   z-index: -1000;
   display: inline-block;
   margin-bottom: 20px;
+  margin-top: -100px;
 }
 
 .inactive-menu {
@@ -189,6 +191,10 @@ a:hover {
   margin-top: 40px;
 }
 
+.project-preview-header-link {
+  color: ghostwhite;
+}
+
 .project-preview-header {
   color: ghostwhite;
   background: #333;
@@ -217,17 +223,61 @@ a:hover {
 }
 
 .project-preview-projects-link h1 {
-  background: #e8ecef;
-  border-radius: 25px;
+  background: #6c747d;
+  color: ghostwhite;
   padding: 10px;
 }
 
 .project-preview-projects-link h1:hover {
-  background: #6c747d;
-  border-radius: 25px;
+  background: #0bc7c7;
   padding: 10px;
 }
 
-.project-preview-header-link {
+.card-image {
+  opacity: 65%;
+}
+.card-image:hover {
+  opacity: 100%;
+}
+
+.project-article {
+  background: #e8efda;
+  display: block;
+  position: center;
+  margin-bottom: 30px;
+  border-style: solid;
+  border-color: dimgrey;
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.project-article h5 {
+  background: dimgrey;
   color: ghostwhite;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: -1;
+}
+
+.project-article-content {
+  margin: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: dimgrey;
+  padding: 0 0 10px 0;
+}
+
+.project-article-image-discribe {
+  background-image: url("./img/discribe_wiki_preview.JPG");
+  background-size: cover;
+}
+
+.project-article-image-car-rental {
+  background-image: url("./img/car_rental_preview.JPG");
+  background-size: cover;
+}
+
+.project-article-image-portfolio {
+  background-image: url("./img/portfolio_preview.JPG");
+  background-size: cover;
 }

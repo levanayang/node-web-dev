@@ -1,8 +1,11 @@
 // a page to show off past cs projects
 
 import React, { Component } from 'react'
-// import Menu from "./Menu";
 import {Col, Container, Jumbotron, ListGroup, ListGroupItem, Row} from "reactstrap";
+
+import DiScribeArticle from "./DiScribeArticle";
+import CarRentalArticle from "./CarRentalArticle";
+import WebsitePortfolioArticle from "./WebsitePortfolioArticle";
 
 class Projects extends Component {
     render() {
@@ -12,9 +15,11 @@ class Projects extends Component {
                 <Jumbotron fluid className="projects-jumbotron">
                     <h1 className="display-4">Projects</h1>
                 </Jumbotron>
+                <DiScribeArticle />
+                <CarRentalArticle />
+                <WebsitePortfolioArticle />
                 <Row>
                     <Col sm="12" md={{ size: 6, offset: 3 }}>
-                        <h3>CS Projects</h3>
                         {/*TODO: add more info on each project: title, summary, groups*/}
                         <ListGroup>
                             <ListGroupItem className="list-cs-projects"

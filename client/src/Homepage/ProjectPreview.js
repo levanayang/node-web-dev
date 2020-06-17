@@ -11,7 +11,7 @@ import {
     CardBody,
     CardHeader
 } from "reactstrap";
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const ProjectPreview = (props) => {
     return (
@@ -19,11 +19,11 @@ const ProjectPreview = (props) => {
             <CardDeck>
                 <Card>
                     <CardHeader className="project-preview-header">
-                        <NavLink to="/projects"
-                                 className="project-preview-header-link"
-                                 exact={true}>
+                        <Link to="/projects"
+                              className="project-preview-header-link"
+                              exact={true}>
                             <strong>Car Rental Website</strong>
-                        </NavLink>
+                        </Link>
                     </CardHeader>
                     <CardBody>
                         <CardText className="text-left">
@@ -33,9 +33,17 @@ const ProjectPreview = (props) => {
                     <CardImg top width="100%"
                              src= {`${process.env.PUBLIC_URL}/images/car_rental_preview.jpg`}
                              alt="Mock Car Rentals"
+                             className="card-image"
+
                     />
                     <CardFooter className="project-preview-footer">
                         <ButtonGroup className="project-preview-button-group">
+                            <Button color="info">
+                                <Link to="/projects"
+                                      className="project-preview-header-link"
+                                      exact={true}
+                                >Project Page</Link>
+                            </Button>
                             <Button>
                                 <a href="https://car-rental-304-2019.herokuapp.com/"
                                    className="project-preview-link"
@@ -51,11 +59,12 @@ const ProjectPreview = (props) => {
                 </Card>
                 <Card>
                     <CardHeader className="project-preview-header">
-                        <NavLink to="/projects"
-                                 className="project-preview-header-link"
-                                 exact={true}>
+                        <Link to="/projects"
+                              className="project-preview-header-link"
+                              exact={true}
+                        >
                             <strong>DiScribe</strong>
-                        </NavLink>
+                        </Link>
                     </CardHeader>
                     <CardBody>
                         <CardText className="text-left">
@@ -64,14 +73,22 @@ const ProjectPreview = (props) => {
                     </CardBody>
                     <CardImg top width="100%"
                              src= {`${process.env.PUBLIC_URL}/images/discribe_wiki_preview.jpg`}
-                             alt="Mock Car Rentals"
+                             alt="DiScribe project wiki"
+                             className="card-image"
                     />
                     <CardImg top width="100%"
                              src= {`${process.env.PUBLIC_URL}/images/discribe_preview.jpg`}
-                             alt="Mock Car Rentals"
+                             alt="DiScribe project site"
+                             className="card-image"
                     />
                     <CardFooter className="project-preview-footer">
                         <ButtonGroup className="project-preview-button-group">
+                            <Button color="info">
+                                <Link to="/projects"
+                                      className="project-preview-header-link"
+                                      exact={true}
+                                >Project Page</Link>
+                            </Button>
                             <Button>
                                 <a href="https://github.com/Workplace-Futurists/DiScribe/wiki"
                                    className="project-preview-link"
@@ -85,7 +102,7 @@ const ProjectPreview = (props) => {
                             <Button>
                                 <a href="https://discribe-cs319.azurewebsites.net/"
                                    className="project-preview-link"
-                                >Live Site</a>
+                                >DiScribe Web</a>
                             </Button>
                         </ButtonGroup>
                     </CardFooter>
