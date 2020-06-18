@@ -25,7 +25,7 @@ class About extends Component {
                     <Col>
                         <Card>
                             <CardHeader className="text-left"><h1>Pleased to meet you.</h1></CardHeader>
-                            <CardBody>
+                            <CardBody className="text-justify">
                                 My name is Levana and I'm a recent grad from the University of British
                                 Columbia. Throughout my school life I have always been interested in natural systems
                                 and the biology of animals, but school also nurtured my passion for math,

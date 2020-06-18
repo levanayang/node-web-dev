@@ -6,7 +6,9 @@ class WebsitePortfolioArticle extends React.Component {
         return (
             <Container fluid className="project-article">
                 <Row>
-                    <Col xs="6" lg="4" className="project-article-image-portfolio"/>
+                    <Col xs="6" lg="4" className="project-article-image-portfolio">
+                        <h5>Preview</h5>
+                    </Col>
                     <Col className="project-article-content">
                         <h5>Description</h5>
                         <p>

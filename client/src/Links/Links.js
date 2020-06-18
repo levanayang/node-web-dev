@@ -10,7 +10,8 @@ import {Container,
     ListGroupItem
 } from "reactstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook, faGithubAlt, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+// import {faFacebook, faGithubAlt, faInstagram, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faGithubAlt, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 class Links extends Component {
     render() {
@@ -21,7 +22,8 @@ class Links extends Component {
                     <h1 className="display-4">Links</h1>
                 </Jumbotron>
                 <Row>
-                    <Col  xs="6">
+                    {/*<Col  xs="6">*/}
+                    <Col sm="12" md={{ size: 6, offset: 3 }}>
                         <h3>Professional</h3>
                         <ListGroup>
                             <ListGroupItem className="list-professional-links"

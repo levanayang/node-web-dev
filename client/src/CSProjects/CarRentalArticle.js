@@ -66,7 +66,9 @@ class CarRentalArticle extends React.Component {
                             <Button><a href="https://car-rental-304-2019.herokuapp.com/?fbclid=IwAR31nbmPOjpFA5xPKtE-1HItctb_apXa3WIiC5XtXgIOAODOkuFnao2i_nc">Live Page</a></Button>
                         </ButtonGroup>
                     </Col>
-                    <Col xs="6" lg="4" className="project-article-image-car-rental" />
+                    <Col xs="6" lg="4" className="project-article-image-car-rental">
+                        <h5>Preview</h5>
+                    </Col>
                 </Row>
             </Container>
         )

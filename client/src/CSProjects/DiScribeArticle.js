@@ -7,7 +7,9 @@ class DiScribeArticle extends React.Component {
         return (
             <Container fluid className="project-article">
                 <Row>
-                    <Col xs="4" lg="4" className="project-article-image-discribe"/>
+                    <Col xs="4" lg="4" className="project-article-image-discribe">
+                        <h5>Preview</h5>
+                    </Col>
                     <Col className="project-article-content">
                         <h5>Description</h5>
                         <p>

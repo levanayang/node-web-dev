@@ -272,18 +272,22 @@ a:hover {
 }
 
 .project-article-image-discribe {
-  background-image: url("./img/discribe_preview.JPG"), url("./img/discribe_wiki_preview.JPG");
-  background-position: top left, bottom left;
-  /*background-size: cover;*/
+  background-image: url("./img/discribe_wiki_preview.JPG");
+  background-position: top left;
+  background-size: cover;
   background-repeat: no-repeat;
+  padding: 0;
 }
 
 .project-article-image-car-rental {
   background-image: url("./img/car_rental_preview.JPG");
   background-size: cover;
+  background-position: top right;
+  padding: 0;
 }
 
 .project-article-image-portfolio {
   background-image: url("./img/portfolio_preview.JPG");
   background-size: cover;
+  padding: 0;
 }
