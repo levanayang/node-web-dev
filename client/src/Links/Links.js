@@ -42,28 +42,28 @@ class Links extends Component {
                             </ListGroupItem>
                         </ListGroup>
                     </Col>
-                    <Col xs="6">
-                        <h3>Social Media</h3>
-                        {/*TODO: make button to hide and collapse these links*/}
-                        <ListGroup>
-                            <ListGroupItem className="list-social-media"
-                                           tag="a"
-                                           href="https://www.facebook.com/levana.yang.5">
-                                <FontAwesomeIcon className="links-icon"
-                                                 icon={faFacebook}
-                                                 size="2x" />
-                                Facebook
-                            </ListGroupItem>
-                            <ListGroupItem className="list-social-media"
-                                           tag="a"
-                                           href="https://www.instagram.com/climili/">
-                                <FontAwesomeIcon className="links-icon"
-                                                 icon={faInstagram}
-                                                 size="2x" />
-                                Instagram
-                            </ListGroupItem>
-                        </ListGroup>
-                    </Col>
+                    {/*<Col xs="6">*/}
+                    {/*    <h3>Social Media</h3>*/}
+                    {/*    /!*TODO: make button to hide and collapse these links*!/*/}
+                    {/*    <ListGroup>*/}
+                    {/*        <ListGroupItem className="list-social-media"*/}
+                    {/*                       tag="a"*/}
+                    {/*                       href="https://www.facebook.com/levana.yang.5">*/}
+                    {/*            <FontAwesomeIcon className="links-icon"*/}
+                    {/*                             icon={faFacebook}*/}
+                    {/*                             size="2x" />*/}
+                    {/*            Facebook*/}
+                    {/*        </ListGroupItem>*/}
+                    {/*        <ListGroupItem className="list-social-media"*/}
+                    {/*                       tag="a"*/}
+                    {/*                       href="https://www.instagram.com/climili/">*/}
+                    {/*            <FontAwesomeIcon className="links-icon"*/}
+                    {/*                             icon={faInstagram}*/}
+                    {/*                             size="2x" />*/}
+                    {/*            Instagram*/}
+                    {/*        </ListGroupItem>*/}
+                    {/*    </ListGroup>*/}
+                    {/*</Col>*/}
                 </Row>
             </Container>
         );
