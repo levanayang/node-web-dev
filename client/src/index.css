@@ -16,6 +16,10 @@ code {
     monospace;
 }
 
+a {
+  color: ghostwhite;
+}
+
 a:hover {
   color: ghostwhite;
   text-decoration: none;
@@ -268,8 +272,10 @@ a:hover {
 }
 
 .project-article-image-discribe {
-  background-image: url("./img/discribe_wiki_preview.JPG");
-  background-size: cover;
+  background-image: url("./img/discribe_preview.JPG"), url("./img/discribe_wiki_preview.JPG");
+  background-position: top left, bottom left;
+  /*background-size: cover;*/
+  background-repeat: no-repeat;
 }
 
 .project-article-image-car-rental {
