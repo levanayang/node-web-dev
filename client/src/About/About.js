@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import {Container, Jumbotron, Col, Row, Card, CardBody, CardHeader, CardImg} from "reactstrap";
 
 import ContactForm from "./ContactForm";
+import me_profile from "../img/me_profile.jpg"
 
 class About extends Component {
     render() {
@@ -15,8 +16,9 @@ class About extends Component {
                 <Row>
                     <Col xs="2">
                         <Card>
-                            <CardImg top width="100%"
-                                     src= {`${process.env.PUBLIC_URL}/images/me_profile.jpg`}
+                            <CardImg top
+                                     width="100%"
+                                     src= {me_profile}
                                      alt="my photo"
                                      className="card-image">
                             </CardImg>

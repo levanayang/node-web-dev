@@ -239,6 +239,9 @@ a:hover {
 
 .card-image {
   opacity: 65%;
+  /*background-image: url("./img/me_profile.jpg");*/
+  /*width: 100%;*/
+  /*height: 100%;*/
 }
 .card-image:hover {
   opacity: 100%;

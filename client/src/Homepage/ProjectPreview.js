@@ -13,6 +13,11 @@ import {
 } from "reactstrap";
 import {Link} from 'react-router-dom';
 
+// Images
+import discribe_preview from "../img/discribe_preview.JPG"
+import discribe_wiki_preview from "../img/discribe_wiki_preview.JPG"
+import car_rental_preview from "../img/car_rental_preview.JPG"
+
 const ProjectPreview = (props) => {
     return (
         <Container className="project-previews">
@@ -31,7 +36,7 @@ const ProjectPreview = (props) => {
                         </CardText>
                     </CardBody>
                     <CardImg top width="100%"
-                             src= {`${process.env.PUBLIC_URL}/images/car_rental_preview.jpg`}
+                             src= {car_rental_preview}
                              alt="Mock Car Rentals"
                              className="card-image"
 
@@ -72,12 +77,12 @@ const ProjectPreview = (props) => {
                         </CardText>
                     </CardBody>
                     <CardImg top width="100%"
-                             src= {`${process.env.PUBLIC_URL}/images/discribe_wiki_preview.jpg`}
+                             src= {discribe_wiki_preview}
                              alt="DiScribe project wiki"
                              className="card-image"
                     />
                     <CardImg top width="100%"
-                             src= {`${process.env.PUBLIC_URL}/images/discribe_preview.jpg`}
+                             src= {discribe_preview}
                              alt="DiScribe project site"
                              className="card-image"
                     />
