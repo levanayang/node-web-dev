@@ -1,9 +1,9 @@
-// webpack.config.js
+// webpack.config.js in client
 let path = require('path');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
         filename: "bundle.js",
         path: path.resolve(__dirname, 'dist'),
