@@ -1,5 +1,6 @@
 // webpack.config.js
 let path = require('path');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, "client"),
@@ -34,6 +35,11 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             }
         ]
-    }
+    },
+    plugins: [new HtmlWebpackPlugin({
+        title: 'Levana Yang',
+        //load a custom template
+        template: path.resolve(__dirname, 'client', 'public', 'index.html')
+    })]
     // end of babel loader
 }
