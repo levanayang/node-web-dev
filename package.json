@@ -12,8 +12,7 @@
     "client": "npm start --prefix client",
     "server": "nodemon server",
     "start": "webpack-dev-server --mode development --open",
-    "build": "webpack --mode production",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build && webpack -p"
   },
   "repository": {
     "type": "git",
