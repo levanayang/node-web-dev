@@ -25,9 +25,9 @@ app.use('/', require('./api/EmailHandler'));
 // path finding for production build
 if (ENV === 'production') {
     // serve static files that are in the client/build folder
-    app.use(express.static(path.join(__dirname, '../client/dist')));
+    app.use(express.static(path.join(__dirname, '../client/build')));
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+        res.sendFile(path.join(__dirname, '../client/build/index.html'));
     });
 }
 
