@@ -14,9 +14,9 @@ import {
 import {Link} from 'react-router-dom';
 
 // Images
-import discribe_preview from "../img/discribe_preview.JPG"
-import discribe_wiki_preview from "../img/discribe_wiki_preview.JPG"
-import car_rental_preview from "../img/car_rental_preview.JPG"
+import discribe_preview from "../discribe_preview.JPG"
+import discribe_wiki_preview from "../discribe_wiki_preview.JPG"
+import car_rental_preview from "../car_rental_preview.JPG"
 
 const ProjectPreview = (props) => {
     return (

@@ -44,22 +44,22 @@ a:hover {
 }
 
 .main-jumbotron {
-  background-image: url("img/me_with_cup_side.jpg");
+  background-image: url("me_with_cup_side.jpg");
   background-position-y: center;
 }
 .about-jumbotron {
-  background-image: url("img/inti_touch.jpg");
+  background-image: url("inti_touch.jpg");
   background-position-y: center;
   opacity: 0.8;
   padding-top: 85px;
 }
 .projects-jumbotron {
-  background-image: url("img/beeb_and_keyboard.jpg");
+  background-image: url("beeb_and_keyboard.jpg");
   background-position-y: center;
   padding-top: 85px;
 }
 .links-jumbotron {
-  background-image: url("img/flat_ear_beeb.jpg");
+  background-image: url("flat_ear_beeb.jpg");
   background-position-y: center;
   padding-top: 85px;
 }
@@ -276,7 +276,7 @@ a:hover {
 }
 
 .project-article-image-discribe {
-  background-image: url("./img/discribe_wiki_preview.JPG");
+  background-image: url("discribe_wiki_preview.JPG");
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,14 +284,14 @@ a:hover {
 }
 
 .project-article-image-car-rental {
-  background-image: url("./img/car_rental_preview.JPG");
+  background-image: url("car_rental_preview.JPG");
   background-size: cover;
   background-position: top right;
   padding: 0;
 }
 
 .project-article-image-portfolio {
-  background-image: url("./img/portfolio_preview.JPG");
+  background-image: url("portfolio_preview.JPG");
   background-size: cover;
   padding: 0;
 }
