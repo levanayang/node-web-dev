@@ -37,7 +37,7 @@ class About extends Component {
                                 Immunology. UBC was where I was gripped by the art of software development. I have a deep
                                 interest in data science and bioinformatics but I discovered that I also loved writing code
                                 and learning how systems work. Currently, I am dedicating myself to improving my
-                                programming skills and searching for a job opportunities that offer real world experience.
+                                programming skills and searching for job opportunities that offer real world experience.
                                 I hope to one day return to school to pursue further education in bioinformatics or fine
                                 arts but for now I am preoccupied with exploring the world for intelligent design. I hope
                                 you enjoyed learning a bit about me, and thank you for taking the time to read about my long
