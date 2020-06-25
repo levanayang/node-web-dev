@@ -14,9 +14,7 @@ import {
 import {Link} from 'react-router-dom';
 
 // Images
-import discribe_preview from "../img/ImageImports"
-import discribe_wiki_preview from "../img/discribe_wiki_preview.JPG"
-import car_rental_preview from "../img/car_rental_preview.JPG"
+import ImageImports from "../img/ImageImports"
 
 const ProjectPreview = (props) => {
     return (
@@ -36,7 +34,7 @@ const ProjectPreview = (props) => {
                         </CardText>
                     </CardBody>
                     <CardImg top width="100%"
-                             src= {car_rental_preview}
+                             src= {ImageImports.car_rental_preview}
                              alt="Mock Car Rentals"
                              className="card-image"
 
@@ -77,12 +75,12 @@ const ProjectPreview = (props) => {
                         </CardText>
                     </CardBody>
                     <CardImg top width="100%"
-                             src= {discribe_wiki_preview}
+                             src= {ImageImports.discribe_wiki_preview}
                              alt="DiScribe project wiki"
                              className="card-image"
                     />
                     <CardImg top width="100%"
-                             src= {discribe_preview}
+                             src= {ImageImports.discribe_preview}
                              alt="DiScribe project site"
                              className="card-image"
                     />
@@ -117,9 +115,10 @@ const ProjectPreview = (props) => {
     )
 
 }
-export default {
-    ProjectPreview,
-    discribe_preview,
-    discribe_wiki_preview,
-    car_rental_preview
-}
+export default ProjectPreview
+// export default {
+//     ProjectPreview,
+//     discribe_preview,
+//     discribe_wiki_preview,
+//     car_rental_preview
+// }
