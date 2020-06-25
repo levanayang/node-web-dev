@@ -14,7 +14,7 @@ import {
 import {Link} from 'react-router-dom';
 
 // Images
-import discribe_preview from "../img/discribe_preview.JPG"
+import discribe_preview from "../img/ImageImports"
 import discribe_wiki_preview from "../img/discribe_wiki_preview.JPG"
 import car_rental_preview from "../img/car_rental_preview.JPG"
 
@@ -117,4 +117,9 @@ const ProjectPreview = (props) => {
     )
 
 }
-export default ProjectPreview;
+export default {
+    ProjectPreview,
+    discribe_preview,
+    discribe_wiki_preview,
+    car_rental_preview
+}
