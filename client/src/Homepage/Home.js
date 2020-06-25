@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import {Container, Jumbotron} from "reactstrap";
 import Resume from './Resume';
-import ProjectPreview from "../ProjectPreview";
+import ProjectPreview from "./ProjectPreview";
 import {NavLink} from 'react-router-dom';
 
 class Home extends Component {

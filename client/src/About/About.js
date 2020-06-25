@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import {Container, Jumbotron, Col, Row, Card, CardBody, CardHeader, CardImg} from "reactstrap";
 
 import ContactForm from "./ContactForm";
-import me_profile from "../me_profile.jpg"
+import me_profile from "../img/me_profile.jpg"
 
 class About extends Component {
     render() {
