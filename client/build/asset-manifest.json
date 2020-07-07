@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.5783908d.chunk.css",
-    "main.js": "/static/js/main.6001fa7c.chunk.js",
-    "main.js.map": "/static/js/main.6001fa7c.chunk.js.map",
+    "main.css": "/static/css/main.f50fa658.chunk.css",
+    "main.js": "/static/js/main.4707533c.chunk.js",
+    "main.js.map": "/static/js/main.4707533c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.98a2b520.js",
     "runtime-main.js.map": "/static/js/runtime-main.98a2b520.js.map",
     "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
-    "static/js/2.90c4f7ee.chunk.js": "/static/js/2.90c4f7ee.chunk.js",
-    "static/js/2.90c4f7ee.chunk.js.map": "/static/js/2.90c4f7ee.chunk.js.map",
+    "static/js/2.44456b96.chunk.js": "/static/js/2.44456b96.chunk.js",
+    "static/js/2.44456b96.chunk.js.map": "/static/js/2.44456b96.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f0d8342847864829b96d89b14a337318.js": "/precache-manifest.f0d8342847864829b96d89b14a337318.js",
+    "precache-manifest.a798c8cc77aacf61b4bc4297d2b3ac65.js": "/precache-manifest.a798c8cc77aacf61b4bc4297d2b3ac65.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
-    "static/css/main.5783908d.chunk.css.map": "/static/css/main.5783908d.chunk.css.map",
-    "static/js/2.90c4f7ee.chunk.js.LICENSE.txt": "/static/js/2.90c4f7ee.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/portfolio_preview.ba76f584.JPG",
-    "static/media/car_rental_er_diagram.5fac3e75.jpg": "/static/media/car_rental_er_diagram.5fac3e75.jpg",
-    "static/media/discribe_audio_profile.JPG": "/static/media/discribe_audio_profile.ee0407e2.JPG",
-    "static/media/discribe_preview.JPG": "/static/media/discribe_preview.05a9b56a.JPG",
-    "static/media/me_profile.37dcfc03.jpg": "/static/media/me_profile.37dcfc03.jpg"
+    "static/css/main.f50fa658.chunk.css.map": "/static/css/main.f50fa658.chunk.css.map",
+    "static/js/2.44456b96.chunk.js.LICENSE.txt": "/static/js/2.44456b96.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/portfolio_preview.dec2db0d.webp",
+    "static/media/car_rental_er_diagram.webp": "/static/media/car_rental_er_diagram.fc1f088b.webp",
+    "static/media/discribe_audio_profile.webp": "/static/media/discribe_audio_profile.ea46877f.webp",
+    "static/media/discribe_preview.webp": "/static/media/discribe_preview.d5a01414.webp",
+    "static/media/me_profile.webp": "/static/media/me_profile.4827fc49.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.98a2b520.js",
     "static/css/2.af3c1da9.chunk.css",
-    "static/js/2.90c4f7ee.chunk.js",
-    "static/css/main.5783908d.chunk.css",
-    "static/js/main.6001fa7c.chunk.js"
+    "static/js/2.44456b96.chunk.js",
+    "static/css/main.f50fa658.chunk.css",
+    "static/js/main.4707533c.chunk.js"
   ]
 }

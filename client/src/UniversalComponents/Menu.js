@@ -15,7 +15,8 @@ class Menu extends React.Component {
         this.toggle = this.toggle.bind(this);
         this.state = {
             isOpen: false,
-            navCollapsed: false
+            navCollapsed: false,
+            navOpacity: "0.2"
         }
     }
 
@@ -25,13 +26,22 @@ class Menu extends React.Component {
         })
     }
 
+    componentDidMount() {
+        document.addEventListener("scroll", () => {
+            let opacity = window.scrollY < 100 ? "0.2" : "1.0";
+            this.setState({navOpacity: opacity});
+        });
+    }
+
     render() {
         return (
             <div>
-                <Navbar dark
-                        color="dark"
-                        expand="md"
-                        fixed="top"
+                <Navbar
+                    expand="md"
+                    fixed="top"
+                    style={{
+                        backgroundColor: `rgba(38,20,20,${this.state.navOpacity})`
+                    }}
                 >
                     <NavbarBrand tag={Link} to="/">Levana Yang</NavbarBrand>
                     <NavbarToggler onClick={this.toggle}/>
