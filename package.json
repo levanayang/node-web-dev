@@ -52,7 +52,7 @@
     "express": "^4.17.1",
     "googleapis": "^39.2.0",
     "lodash": "^4.17.19",
-    "nodemailer": "^6.4.8",
+    "nodemailer": "^6.4.16",
     "pg": "^8.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
